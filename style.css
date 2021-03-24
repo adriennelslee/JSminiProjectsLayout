@@ -1,0 +1,79 @@
+
+:root {
+    --yellow: #ffc600;
+  }
+  
+  html {
+    color: #444;
+    font-family: Cambria, Cochin, Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+  }
+  
+  p {
+    line-height: 1.8;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  a {
+    color: black;
+    text-decoration: underline wavy var(--yellow);
+  }
+  
+  h1,
+  h2 {
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 100;
+    margin: 0;
+  }
+  
+  .post{
+      width: 1000px;
+      margin: 200px auto;
+      display: grid;
+      grid-template-columns: 3fr 12fr 5fr;
+      grid-gap: 10px 50px;
+  }
+  
+  .post > * {
+      grid-column: 2/ span 1;
+  }
+  
+  .post > figure {
+      margin: 0;
+      grid-column: 1 / -1;
+  }
+  
+  figcaption{
+      font-size: 10px;
+  }
+  
+  .post > blockquote{
+      margin: 0;
+      grid-column: 1 / -1;
+      font-size: 60px;
+      font-style: italic;
+      text-align: center;
+  }
+  
+  .tip{
+      background-color: #FAFAFA;
+      padding: 20px;
+      grid-row: span 5;
+      align-self: start;
+  }
+  
+  .tip-right{
+      grid-column: span 1 / -1;
+      text-align: left;
+      border-left: 2px solid var(--yellow);
+  }
+  
+  .tip-left{
+      grid-column: 1 / span 1;
+      text-align: right;
+      border-right: 2px solid var(--yellow);
+  }
