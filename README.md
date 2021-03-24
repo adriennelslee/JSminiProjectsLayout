@@ -1,1 +1,1 @@
-# JSproject1-6
+# JSminiProjectsLayout
